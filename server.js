@@ -37,6 +37,7 @@ app.post("/api/v1/user/register", async (req, res) => {
 });
 app.get("/", async (req, res) => {
  console.log("Backend Working");
+ res.status(200).send("Backend Working .");
 });
 
 app.get("/api/v1/user/:telegramId", async (req, res) => {
