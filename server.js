@@ -35,6 +35,9 @@ app.post("/api/v1/user/register", async (req, res) => {
     res.status(500).send("User registration failed.");
   }
 });
+app.get("/", async (req, res) => {
+ console.log("Backend Working");
+});
 
 app.get("/api/v1/user/:telegramId", async (req, res) => {
   const { telegramId } = req.params;
